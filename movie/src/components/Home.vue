@@ -22,8 +22,10 @@
     justify-content: space-evenly;
 }
 .card img{
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .card{
     width: 300px;

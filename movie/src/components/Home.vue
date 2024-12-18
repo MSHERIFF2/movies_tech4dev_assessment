@@ -3,15 +3,19 @@
        
         <div v-for="movie in movies" :key="movie.id" class="card">
             <img :src=" movie.primaryImage" alt="">
-            <h1>{{ movie.title }}</h1>
+            
+            <h2>{{ movie.title }}</h2>
             <p>{{ movie.description}}</p>
-            <h4>{{ movie.startYear }}</h4>
-            <p>{{  movie.runtimeMinutes }}</p>
-            <p>{{ movie.contentRating }}</p>
-            <p>{{ movie.averageRating }}</p>
-            <h5>{{  movie.numVotes }}</h5>
-            <h6>{{ movie.type }}</h6>
+            <h4>Year: {{ movie.startYear }}</h4>
+            <p>Minutes:{{  movie.runtimeMinutes }}</p>
+            <p>Rating:{{ movie.contentRating }}</p>
+            <p>Avg Rating:{{ movie.averageRating }}</p>
+            <h5>Vote: {{  movie.numVotes }}</h5>
+            <h6>Type:{{ movie.type }}</h6>
             <a :href=movie.url>view movie</a>
+
+            
+           
         </div>
     </div>
 </template>
@@ -22,13 +26,13 @@
     justify-content: space-evenly;
 }
 .card img{
-    width: 300px;
-    height: 250px;
+    width: 250px;
+    height: 270px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 .card{
-    width: 300px;
+    width: 250px;
     height: fit-content;
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgba(2345, 1345, 2222, 0.5);
